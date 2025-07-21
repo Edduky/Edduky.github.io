@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Meu site no GitHub</title>
-  </head>
-  <body>
-    <h1>Olá, mundo!</h1>
-    <p>Esse é meu site!</p>
-  </body>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Personagem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌟 Nome do Personagem</h1>
+    <img src="personagem.png" alt="Imagem do personagem" class="personagem">
+    <p>Esse é um personagem criado por mim. Ele vive aventuras em um mundo mágico cheio de perigos e descobertas!</p>
+
+    <div class="botoes">
+      <button onclick="document.getElementById('musica').play()">▶️ Tocar Música</button>
+      <button onclick="document.getElementById('musica').pause()">⏸️ Pausar</button>
+    </div>
+  </div>
+
+  <audio id="musica" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+  </audio>
+</body>
 </html>
